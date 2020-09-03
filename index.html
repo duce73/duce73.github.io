@@ -168,35 +168,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h2 id="机器学习介绍">机器学习介绍</h2>
+        <h2 id="机器学习介绍">机器学习介绍</h2>
 <p>最近打算看一看机器学习，不断地丰富自己，keep learning!</p>
-<p>机器学习目前来说确实很火，广义上的AI，以及很多高校的研究都是有关于或者直接应用机器学习。机器学习目前的市场应用也很广泛，并且在未来，我认为对于通过机器学习的手段方法来达到分析某些数据的特征来掌握规律或者预测未来，也会有更多的技术落地到生活中。</p>
-<h2 id="分类">分类</h2>
-<p>分类方法其实挺多的，但是基本上按照有监督的机器学习（Supervised）与无监督的机器学习（Unsupervised），两者最主要的区别在于，Supervised是有结果的，Unsupervised没有结果，所谓有结果，意味着我们有着以前的数据结果（因变量）。</p>
-<pre><code>Supervised：我们通过对于以前的数据进行学习，从而进行对于未知自变量输入后结果的预测。
-
-Unsupervised：通过分析数据之间的特征的不同，从而将数据进行分类。</code></pre>
-<p>下文中主要讲解有监督学习中的线性回归：</p>
-<h2 id="几个概念">几个概念</h2>
-<pre><code>m：m表示训练集的个数；
-x：x表示输入；
-y：y表示输出；
-h：即hypothesis，表示我们拟合出的线性函数，关于x的函数</code></pre>
-<p><span class="math display">\[h(x)=\theta_0+\theta_1x\]</span> j：表示误差； <span class="math display">\[ J(\theta_0,\theta_1)=\frac{1}{2m}\sum_{i=1}^m(h_\theta(x^i)-y^i)^2\]</span> <span class="math display">\[x^i与y^i并非表示幂，指输出输出\]</span> 目标：找出最小的costfunction即 <span class="math display">\[ costfunction = \min J(\theta_0,\theta_1)\]</span></p>
-<h2 id="算法">算法</h2>
-<p>有了上面的概念以及函数，我们该考虑如何才能找到最佳拟合的线性方程来对数据进行拟合，从而进行预测。</p>
-<ol type="1">
-<li><h3 id="梯度下降">梯度下降</h3>
-<p>梯度下降即是通过一开始选定的<span class="math inline">\(\theta\)</span>值进行求偏导，不断地改变<span class="math inline">\(\theta\)</span>的值，从而使<span class="math inline">\(costfunction\)</span>达到局部最小值，进而对数据进行拟合。</p>
-<p><span class="math display">\[ \theta_j = \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta_0,\theta_1)\]</span> 上式是对于线性回归问题的梯度变换公式，通过对两个参数求偏导，<span class="math inline">\(\theta_0,\theta_1\)</span>不断的趋近于局部最小的<span class="math inline">\(costfunction\)</span>,<span class="math inline">\(\alpha\)</span>定义为步长，表示每次一变换的大小，根据公式，改函数收敛，当越接近局部最小值时，<span class="math inline">\(\theta\)</span>的变化越小。</p>
-<p><span class="math display">\[j = 0: \frac{\partial}{\partial\theta_0}J(\theta_0,\theta_1) = \frac{1}{m}\sum_{i = 1}^{m}(h_\theta(x^i)-y^i)\]</span> <span class="math display">\[j = 1: \frac{\partial}{\partial\theta_1}J(\theta_0,\theta_1) = \frac{1}{m}\sum_{i = 1}^{m}(h_\theta(x^i)-y^i)x^i\]</span></p></li>
-<li><h3 id="通过线性代数的方法">通过线性代数的方法</h3>
-<p>通过线性代数的知识对数据进行拟合，对于大规模数据的表现不如梯度下降算法。</p></li>
-</ol>
-<h2 id="感受">感受</h2>
-<p>虽然主要说的是线性回归的模型，但是可以拓展到非线性的情况，同样的也可以拓展到高维的情况如<span class="math inline">\(z(x,y)\)</span>，梯度下降算法体现了对于多变量的支持。</p>
-
+<p>机器学习目前来说确实很火，广义上的AI，以及很多高校的研究都是有关于或者直接应用机器学习。机器学习目前的市场应用也很广泛，并且在未来，我认为对于通过机器学习的手段方法来达到分析某些数据的特征来掌握规律或者预测未来，也会有更多的技术落地到生活中。
+        
+          <a class="article-more-a" href="/2020/09/02/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8-md/#more">more >></a>
+        
       
 
       
